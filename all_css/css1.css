@@ -1,0 +1,40 @@
+
+#puk {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+legend {
+    background-color: rgb(14, 201, 98);
+    border: 2px solid white;
+    border-radius: 38px;
+    justify-self: center;
+    font-size: 24px;
+    color: rgb(17, 18, 94);
+}
+
+input {
+    width: 150px;
+    height: 20px;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+#tx {
+    background-color: rgb(123, 247, 240);
+    font-size: large;
+    color: rgb(153, 120, 153);
+}
+
+.bug {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
