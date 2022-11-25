@@ -21,7 +21,7 @@ puk.addEventListener("submit", function(event){
         <p>${pokemon.response.name[0].toUpperCase() + pokemon.response.name.slice(1)} №${pokemon.response.id}</p>
         <img src="${pokemon.response.sprites.front_female}">
         `
-        console.log(pokemon.response);
+        console.log(pokemon);
     }
     
 })

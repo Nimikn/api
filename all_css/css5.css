@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid black;
+    padding: 10px;
+    font-size: large;
+    font-family: URW Chancery L, cursive;
+}
+#mainfilters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#checkbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
