@@ -4,6 +4,7 @@ let main = document.querySelector("main");
 let order = true;
 let object = "id";
 let allpoks = [];
+let allPromises = [];
 let request = new XMLHttpRequest();
 request.open("GET", url);
 request.send();
@@ -11,9 +12,11 @@ request.responseType = "json";
 request.onload = function(){
     let pokemons = request.response.results;
     pokemons.forEach(pokemon => {
+        console.log(1);
         let promise = new Promise(function(resolve, reject){
             let pokerequest = new XMLHttpRequest();
             pokerequest.open("GET", pokemon.url);
+            pokerequest.responseType = "json";
             pokerequest.send();
             pokerequest.onload = function(){
                 if (pokerequest.status === 200){
@@ -47,7 +50,6 @@ function drawpok(pokemon){
         </div>
     </div>
     `
-    console.log(main);
 }
 
 form.addEventListener("submit", function(event){
